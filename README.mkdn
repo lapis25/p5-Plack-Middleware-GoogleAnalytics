@@ -1,0 +1,22 @@
+# NAME
+
+Plack::Middleware::GoogleAnalytics -
+
+# SYNOPSIS
+
+  use Plack::Middleware::GoogleAnalytics;
+
+# DESCRIPTION
+
+Plack::Middleware::GoogleAnalytics is
+
+# AUTHOR
+
+lapis25 <lapis25@gmail.com>
+
+# SEE ALSO
+
+# LICENSE
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
