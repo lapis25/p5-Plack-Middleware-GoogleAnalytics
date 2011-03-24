@@ -21,6 +21,7 @@ sub call {
                 my $chunk = shift;
                 return unless defined $chunk;
                 $chunk =~ s!(?=</body>)!$content!i;
+                $h->set('Content-Length' => length($chunk));
                 return $chunk;
             };
         }
@@ -51,7 +52,7 @@ __END__
 
 =head1 NAME
 
-Plack::Middleware::GoogleAnalytics -
+Plack::Middleware::GoogleAnalytics - embed Google Analytics tracking code.
 
 =head1 SYNOPSIS
 
