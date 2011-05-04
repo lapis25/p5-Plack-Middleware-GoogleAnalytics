@@ -7,11 +7,13 @@ readme_pod_from 'lib/Plack/Middleware/GoogleAnalytics.pm';
 githubmeta;
 
 # requires '';
+requires 'Plack';
 
 tests 't/*.t';
 author_tests 'xt';
 
 build_requires 'Test::More';
+build_requires 'HTTP::Request::Common';
 auto_set_repository;
 auto_include;
 WriteAll;
